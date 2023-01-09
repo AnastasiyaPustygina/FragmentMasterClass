@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_basketItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+    <TextView
+        android:id="@+id/tv_basketItem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_basketItem"
+        app:layout_constraintTop_toTopOf="@id/iv_basketItem"
+        android:layout_marginStart="20dp"
+        android:text="Название"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_basketItem_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_basketItem"
+        app:layout_constraintTop_toBottomOf="@id/tv_basketItem_name"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:text="2300 Р"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

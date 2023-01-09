@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/catalogFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        tools:layout="@layout/activity_main"
+        android:name="com.example.fragmentmasterclass.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        tools:layout="@layout/catalog_fragment"
+        android:id="@+id/catalogFragment"
+        android:name="com.example.fragmentmasterclass.fragment.CatalogFragment"
+        android:label="CatalogFragment" >
+        <action
+            android:id="@+id/action_catalogFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment" />
+        <action
+            android:id="@+id/action_catalogFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productInfoFragment"
+        tools:layout="@layout/product_info_fragment"
+        android:name="com.example.fragmentmasterclass.fragment.ProductInfoFragment"
+        android:label="ProductInfoFragment" >
+        <action
+            android:id="@+id/action_productInfoFragment_to_catalogFragment"
+            app:destination="@id/catalogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        tools:layout="@layout/basket_fragment"
+        android:name="com.example.fragmentmasterclass.fragment.BasketFragment"
+        android:label="BasketFragment" >
+        <action
+            android:id="@+id/action_basketFragment_to_catalogFragment"
+            app:destination="@id/catalogFragment" />
+    </fragment>
+</navigation>

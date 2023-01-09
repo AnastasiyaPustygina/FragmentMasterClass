@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Basket"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_basket"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView
+        android:id="@+id/tv_basket_cost"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Цена: 0 Р"
+        android:layout_margin="14dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_basket_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Оформить заказ"
+        android:textColor="@color/white"
+        android:layout_margin="14dp"/>
+
+
+</LinearLayout>

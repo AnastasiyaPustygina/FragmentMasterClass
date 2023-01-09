@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_catalog"
+        android:icon="@drawable/ic_catalog" android:title="каталог"/>
+    <item android:id="@+id/navigation_basket"
+        android:icon="@drawable/ic_basket" android:title="корзина"/>
+
+</menu>
